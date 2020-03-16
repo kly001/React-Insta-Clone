@@ -2,11 +2,10 @@ import React from "react";
 
 import PostsCard from "./PostsCard.js"
 
-const Posts = props => {
-    console.log(props.posts)
+const PostsContainer = props => {
+    console.log("Props from Posts:",props.posts)
     return (
-  
-
+    // Posts need to be mapped here.
        <ul>
            {props.posts.map(post => {
                return <PostsCard post={post} />
@@ -16,4 +15,4 @@ const Posts = props => {
     )
 };
 
-export default Posts;
+export default PostsContainer;
