@@ -6,7 +6,8 @@ import CommentSection from "./components/CommentSection/CommentsSection.js"
 
 import './App.css';
 
-console.log("Posts in App.js:",posts)
+console.log("Posts in App.js:", posts)
+console.log("Number of posts in App.js:", posts.length)
 
 class App extends Component {
   constructor() {
@@ -15,7 +16,6 @@ class App extends Component {
       posts: posts
     }
   }
-
 
 render() {
 return (
@@ -28,8 +28,8 @@ return (
     <CommentSection/>
   </header>
 </div>
-)
-}
+    )
+  }
 }
 
 

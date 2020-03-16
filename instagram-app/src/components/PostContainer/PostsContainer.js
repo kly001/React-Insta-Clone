@@ -10,7 +10,6 @@ const PostsContainer = props => {
            {props.posts.map(post => {
                return <PostsCard post={post} />
            })}
-
        </ul>
     )
 };
